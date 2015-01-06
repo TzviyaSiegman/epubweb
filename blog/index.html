@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" typeof="bibo:Document " about="" property="dcterms:language" content="en">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+      <title>Bringing together the web and digital publishing communities</title>
+    <style type="text/css">
+      aside {  
+        width: 15em;  
+        float: right;  
+        color: black;  
+        margin-top: 0.5em;  
+        margin-right: 0.5em;  
+        margin-bottom: 0.5em;  
+        margin-left: 0.5em;  
+        padding-top: 0.5em;  
+        padding-right: 0.5em;  
+        padding-bottom: 0.5em;  
+        padding-left: 0.5em;  
+        font-size: 0.9em;
+        background: Lavender;
+        border-left-width: .5em;
+        border-left-style: solid;
+        border-left-color: Orchid;
+      }
+
+      aside > p:first-child:before {  
+        content: "SIDE NOTE: ";
+      }
+
+      figure {
+        margin-top : 0em;
+        margin-bottom: 2em;
+      }
+      .vision {
+        font-style: italic;
+        margin-left: 2em;
+        margin-right: 2em;
+        padding: 0.8em;
+        background: white;
+        border: thin outset black;
+        border-radius: 0.5em;
+        text-align: justify;
+        font-size: 105%;
+      }
+      
+
+    </style>
+
+    
+
+
+    
+    
+  <style>/*****************************************************************
+ * ReSpec 3 CSS
+ * Robin Berjon - http://berjon.com/
+ *****************************************************************/
+
+/* --- INLINES --- */
+em.rfc2119 { 
+    text-transform:     lowercase;
+    font-variant:       small-caps;
+    font-style:         normal;
+    color:              #900;
+}
+
+h1 acronym, h2 acronym, h3 acronym, h4 acronym, h5 acronym, h6 acronym, a acronym,
+h1 abbr, h2 abbr, h3 abbr, h4 abbr, h5 abbr, h6 abbr, a abbr {
+    border: none;
+}
+
+dfn {
+    font-weight:    bold;
+}
+
+a.internalDFN {
+    color:  inherit;
+    border-bottom:  1px solid #99c;
+    text-decoration:    none;
+}
+
+a.externalDFN {
+    color:  inherit;
+    border-bottom:  1px dotted #ccc;
+    text-decoration:    none;
+}
+
+a.bibref {
+    text-decoration:    none;
+}
+
+cite .bibref {
+    font-style: normal;
+}
+
+code {
+    color:  #C83500;
+}
+
+/* --- TOC --- */
+.toc a, .tof a {
+    text-decoration:    none;
+}
+
+a .secno, a .figno {
+    color:  #000;
+}
+
+ul.tof, ol.tof {
+    list-style: none outside none;
+}
+
+.caption {
+    margin-top: 0.5em;
+    font-style:   italic;
+}
+
+/* --- TABLE --- */
+table.simple {
+    border-spacing: 0;
+    border-collapse:    collapse;
+    border-bottom:  3px solid #005a9c;
+}
+
+.simple th {
+    background: #005a9c;
+    color:  #fff;
+    padding:    3px 5px;
+    text-align: left;
+}
+
+.simple th[scope="row"] {
+    background: inherit;
+    color:  inherit;
+    border-top: 1px solid #ddd;
+}
+
+.simple td {
+    padding:    3px 10px;
+    border-top: 1px solid #ddd;
+}
+
+.simple tr:nth-child(even) {
+    background: #f0f6ff;
+}
+
+/* --- DL --- */
+.section dd > p:first-child {
+    margin-top: 0;
+}
+
+.section dd > p:last-child {
+    margin-bottom: 0;
+}
+
+.section dd {
+    margin-bottom:  1em;
+}
+
+.section dl.attrs dd, .section dl.eldef dd {
+    margin-bottom:  0;
+}
+
+@media print {
+    .removeOnSave {
+        display: none;
+    }
+}
+</style><style>/* --- ISSUES/NOTES --- */
+div.issue-title, div.note-title {
+    padding-right:  1em;
+    min-width: 7.5em;
+    color: #b9ab2d;
+}
+div.issue-title { color: #e05252; }
+div.note-title { color: #2b2; }
+div.issue-title span, div.note-title span {
+    text-transform: uppercase;
+}
+div.note, div.issue {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.note > p:first-child, .issue > p:first-child { margin-top: 0 }
+.issue, .note {
+    padding: .5em;
+    border-left-width: .5em;
+    border-left-style: solid;
+}
+div.issue, div.note {
+    padding: 1em 1.2em 0.5em;
+    margin: 1em 0;
+    position: relative;
+    clear: both;
+}
+span.note, span.issue { padding: .1em .5em .15em; }
+
+.issue {
+    border-color: #e05252;
+    background: #fbe9e9;
+}
+.note {
+    border-color: #52e052;
+    background: #e9fbe9;
+}
+
+
+</style><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/w3c-unofficial"><style>.pkt_added {text-decoration:none !important;}</style><style type="text/css"></style><!--[if lt IE 9]><script src='https://www.w3.org/2008/site/js/html5shiv.js'></script><![endif]--></head>
+  <body class="h-entry" style="" role="document" id="respecDocument"><div class="head" role="contentinfo" id="respecHeader">
+  <p>
+      
+        
+      
+  </p>
+    <article>
+    <h1 class="title p-name" id="title" property="dcterms:title">Bringing together the web and digital publishing communities</h1>
+  
+   
+  
+  <h2 property="dcterms:issued" datatype="xsd:dateTime" content="2015-01-06T23:00:00.000Z" id="booknetCA-draft"><time class="dt-published" datetime="2015-01-06">06 January 2015</time></h2>
+  <dl>
+    <dt>Authors:</dt>
+    <dd class="p-author h-card vcard" rel="bibo:editor" inlist=""><span typeof="foaf:Person"><span property="foaf:name" class="p-name fn">Tzviya Siegman</span>, <a rel="foaf:workplaceHomepage" class="p-org org h-org h-card" href="http://www.wiley.com">Wiley</a>, <span class="ed_mailto"><a class="u-email email" rel="foaf:mbox" href="mailto:tsiegman@wiley.com">tsiegman@wiley.com</a></span></span>
+</dd>
+<dd class="p-author h-card vcard" rel="bibo:editor" inlist=""><span typeof="foaf:Person"><span property="foaf:name" class="p-name fn">Ivan Herman</span>, <a rel="foaf:workplaceHomepage" class="p-org org h-org h-card" href="http://www.w3.org">W3C</a>, <span class="ed_mailto"><a class="u-email email" rel="foaf:mbox" href="mailto:ivan@w3.org">ivan@w3.org</a></span></span>
+</dd>
+    
+  </dl>
+  
+    
+        <p class="copyright">
+          This document is licensed under a
+          <a class="subfoot" href="http://creativecommons.org/licenses/by/3.0/" rel="license">Creative Commons
+          Attribution 3.0 License</a>.
+        </p>
+      
+    
+  
+
+</div>
+    
+    <section>
+      <h2>The Origins of the DPUB IG</h2>
+      <p>After traditional browsers, the publishing industry is one of the most important and heaviest users of W3C's technologies. Almost everything from <em>traditional</em> publishing is available online today. Scholarly publishing is completely dependant on the Web. EPUB is basically a website in a box. Publishing has high demands, including typesetting and graphics, high-level interactivity, and rich media. But, the publishing industry has not been involved in developing fundamental web technologies. This led to a missed opportunity. Standards bodies, like the W3C, knew little about the detailed requirements of publishing, and publishing did not contribute to the development of standards. Beginning in 2012, IDPF and W3C organized exploratory workshops to fill this gap. In May 2013, the <a href = "http://www.w3.org/dpub/">Digital Publishing Activity</a> and <a href = "http://www.w3.org/dpub/IG/wiki/Main_Page">Digital Publishing Interest Group</a> were formally chartered.</p>
+      <p>The DPUB IG brings publishing experts together to identify what issues that are not addressed by the Open Web Platform. We escalate issues to W3C working groups who update or develop specs based on our information.</p>
+          
+    </section>
+    
+    <section>
+      <h2>Task Forces and Highlights</h2>
+      <p>The DPUB IG has several task forces dedicated to specific issues. Some task forces, like Web Annotations, become their own <a href="http://www.w3.org/annotation/">Working Groups</a>.</p> 
+      <p>The Pagination and Layout task force works closely with the CSS WG. The group has published <a href = "http://www.w3.org/TR/dpub-latinreq/">Requirements for Latin Text Layout and Pagination</a> and <a href = "http://www.w3.org/TR/2014/WD-css-inline-3-20141218/">CSS Inline Layout Module Level 3</a>, a working draft that enables drop caps and stick-up caps in CSS. There is significant work being done toward standardizing pagination control.</p>
+      <p>The Metadata task force has published a note based on industry interviews in which the team discovered that OWP offers the tools that publishing requires, however publishers may not be familar with the tools.</p>
+      <p>The Content and Markup task force is working on a method to provide a standard way to add a logical structure on top of (but staying compatible with) HTML. This group is working with the W3C's Protocols and Formats WG, which overses extensions through standard attributes for accessibility using ARIA.</p>
+      <p>The Accessibility task force is reviewing existing W3C documentaton to assess whether the documents reflect the needs of digital publishing and whether publishers are using the documents.</p>
+      <p>The STEM (Science, Technology, Engineering, Medicine) task force conducted initial interviews with industry experts and will send out a survey by the end of the month to refine the information gathered in the survey. STEM is a broad category, and we are looking to understand which areas are unique to STEM publihsing.</p>
+    </section>
+<section>
+  <h2>What's Next?</h2>
+  <p>In addition to these activities, the DPUB IG will work with IDPF to help move the vision of EPUB-WEB forward. Recently, W3C and IDPF released a joint white paper entitled <a href="http://w3c.github.io/epubweb/">"Advancing Portable Documents for the Open Web Platform: EPUB-WEB"</a>. This paper outlines a vision of portable documents as native citizens of the OWP. There will be no distinction between online ("Web") and portable ("EPUB"). This means that readers can access their content online and offline, enabling such miracles as annotations, stable references, rights management, reading on a subway, access to databases, and so on.</p>
+</section>
+
+</article>
+  </body></html>
