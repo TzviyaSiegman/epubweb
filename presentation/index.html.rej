@@ -1,0 +1,10 @@
+diff a/presentation/index.html b/presentation/index.html	(rejected hunks)
+@@ -17,7 +17,7 @@
+             .slide:after {
+               padding: 60px 0 0 !important;
+               height: 150px ;
+-              background: url(W3C_ribbon.png) no-repeat ;
++              background: url(figures/W3C_ribbon.png) no-repeat ;
+             }
+             li.c2 {list-style: none; display: inline}
+             p.c1 {font-size:70%}
