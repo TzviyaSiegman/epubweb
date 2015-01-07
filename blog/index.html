@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" typeof="bibo:Document " about="" property="dcterms:language" content="en">
-<head>
+<html dir="ltr" typeof="bibo:Document " about="" property="dcterms:language" content="en"
+  lang="en">
+  <head>
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
-      <title>Bringing together the web and digital publishing communities</title>
+    <title>Bringing together the web and digital publishing communities</title>
     <style type="text/css">
       aside {  
         width: 15em;  
@@ -45,13 +46,7 @@
       
 
     </style>
-
-    
-
-
-    
-    
-  <style>/*****************************************************************
+    <style>/*****************************************************************
  * ReSpec 3 CSS
  * Robin Berjon - http://berjon.com/
  *****************************************************************/
@@ -205,60 +200,218 @@ span.note, span.issue { padding: .1em .5em .15em; }
 }
 
 
-</style><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/w3c-unofficial"><style>.pkt_added {text-decoration:none !important;}</style><style type="text/css"></style><!--[if lt IE 9]><script src='https://www.w3.org/2008/site/js/html5shiv.js'></script><![endif]--></head>
-  <body class="h-entry" style="" role="document" id="respecDocument"><div class="head" role="contentinfo" id="respecHeader">
-  <p>
-      
-        
-      
-  </p>
-    <article>
-    <h1 class="title p-name" id="title" property="dcterms:title">Bringing together the web and digital publishing communities</h1>
-  
-   
-  
-  <h2 property="dcterms:issued" datatype="xsd:dateTime" content="2015-01-06T23:00:00.000Z" id="booknetCA-draft"><time class="dt-published" datetime="2015-01-06">06 January 2015</time></h2>
-  <dl>
-    <dt>Authors:</dt>
-    <dd class="p-author h-card vcard" rel="bibo:editor" inlist=""><span typeof="foaf:Person"><span property="foaf:name" class="p-name fn">Tzviya Siegman</span>, <a rel="foaf:workplaceHomepage" class="p-org org h-org h-card" href="http://www.wiley.com">Wiley</a>, <span class="ed_mailto"><a class="u-email email" rel="foaf:mbox" href="mailto:tsiegman@wiley.com">tsiegman@wiley.com</a></span></span>
-</dd>
-<dd class="p-author h-card vcard" rel="bibo:editor" inlist=""><span typeof="foaf:Person"><span property="foaf:name" class="p-name fn">Ivan Herman</span>, <a rel="foaf:workplaceHomepage" class="p-org org h-org h-card" href="http://www.w3.org">W3C</a>, <span class="ed_mailto"><a class="u-email email" rel="foaf:mbox" href="mailto:ivan@w3.org">ivan@w3.org</a></span></span>
-</dd>
-    
-  </dl>
-  
-    
-        <p class="copyright">
-          This document is licensed under a
-          <a class="subfoot" href="http://creativecommons.org/licenses/by/3.0/" rel="license">Creative Commons
-          Attribution 3.0 License</a>.
-        </p>
-      
-    
-  
+</style><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/w3c-unofficial">
+    <style>.pkt_added {text-decoration:none !important;}</style>
+    <style type="text/css">
+li {  
+  margin-bottom: 0.5em;
+}
 
-</div>
-    
+</style><!--[if lt IE 9]><script src='https://www.w3.org/2008/site/js/html5shiv.js'></script><![endif]-->
+  </head>
+  <body class="h-entry" style=" " role="document" id="respecDocument">
+    <div class="head" role="contentinfo" id="respecHeader">
+      <p> </p>
+      <article>
+        <h1 class="title p-name" id="title" property="dcterms:title">Bringing
+          together the web and digital publishing communities</h1>
+        <h2 property="dcterms:issued" datatype="xsd:dateTime" content="2015-01-06T23:00:00.000Z"
+          id="booknetCA-draft"><time class="dt-published" datetime="2015-01-06">07
+            January 2015</time></h2>
+        <dl>
+          <dt>Authors:</dt>
+          <dd class="p-author h-card vcard" rel="bibo:editor" inlist=""><span typeof="foaf:Person"><span
+                property="foaf:name" class="p-name fn">Tzviya Siegman</span>, <a
+                rel="foaf:workplaceHomepage" class="p-org org h-org h-card" href="http://www.wiley.com">Wiley</a>,
+              <span class="ed_mailto"><a class="u-email email" rel="foaf:mbox" href="mailto:tsiegman@wiley.com">tsiegman@wiley.com</a></span></span>
+          </dd>
+          <dd class="p-author h-card vcard" rel="bibo:editor" inlist=""><span typeof="foaf:Person"><span
+                property="foaf:name" class="p-name fn">Ivan Herman</span>, <a rel="foaf:workplaceHomepage"
+                class="p-org org h-org h-card" href="http://www.w3.org">W3C</a>,
+              <span class="ed_mailto"><a class="u-email email" rel="foaf:mbox" href="mailto:ivan@w3.org">ivan@w3.org</a></span></span>
+          </dd>
+        </dl>
+        <p class="copyright"> This document is licensed under a <a class="subfoot"
+            href="http://creativecommons.org/licenses/by/3.0/" rel="license">Creative
+            Commons Attribution 3.0 License</a>. </p>
+      </article>
+    </div>
     <section>
-      <h2>The Origins of the DPUB IG</h2>
-      <p>After traditional browsers, the publishing industry is one of the most important and heaviest users of W3C's technologies. Almost everything from <em>traditional</em> publishing is available online today. Scholarly publishing is completely dependant on the Web. EPUB is basically a website in a box. Publishing has high demands, including typesetting and graphics, high-level interactivity, and rich media. But, the publishing industry has not been involved in developing fundamental web technologies. This led to a missed opportunity. Standards bodies, like the W3C, knew little about the detailed requirements of publishing, and publishing did not contribute to the development of standards. Beginning in 2012, IDPF and W3C organized exploratory workshops to fill this gap. In May 2013, the <a href = "http://www.w3.org/dpub/">Digital Publishing Activity</a> and <a href = "http://www.w3.org/dpub/IG/wiki/Main_Page">Digital Publishing Interest Group</a> were formally chartered.</p>
-      <p>The DPUB IG brings publishing experts together to identify what issues that are not addressed by the Open Web Platform. We escalate issues to W3C working groups who update or develop specs based on our information.</p>
-          
+      <h2>W3C’s Digital Publishing Interest Group</h2>
+      <h3>Some History</h3>
+      <p>Today, eBooks compete with printed versions, and there is a wide choice
+        of hardware and software available for eBook readers. Journals and
+        magazines are also made available digitally on the Web or in specialized
+        applications and, in some cases, their printed version is even abandoned
+        in favor of a purely digital version. The formats used by eBook readers
+        and tablets for electronic books, magazines, journals and educational
+        resources are largely based on the technologies developed at the <a href="http://www.w3.org">World
+          Wide Web Consortium</a> (W3C), such as (X)HTML, CSS, SVG, SMIL,
+        MathML, or various Web API-s. Commercial publishers also rely on W3C
+        technologies in their back-end processing all the way from authoring
+        through to delivering the printed or electronic product and beyond. In
+        general one can say that the Publishing Industry is one of the largest
+        communities relying on a large palette of W3C technologies.</p>
+      <p>Publishing has also high technical demands, for example in typesetting
+        and graphics, high-level interactivity, and rich media. The experience
+        in aesthetics and ergonomy that the Publishing Industry has accumulated
+        over centuries should indeed not be lost in this new era. However,
+        groups at standards bodies, like the W3C, know little about the detailed
+        requirements of publishers, as that industry did not contribute to the
+        development of standards. The Publishing Industry has, mostly, been
+        behaving in a fairly “passive” mode when it came to technology
+        development: they expected the features to be just there. And that is
+        not the way it works in practice: technology oriented groups at W3C (or
+        other standardization bodies) work with the requirements they know of
+        and with the experts who join the groups; if the Digital Publishing
+        Industry is not present around the table, the features it needs will not
+        be considered. This leads to fragmentation, interoperability issues, and
+        a disconnect between the Publishing Industry and, for example, the
+        browser world.</p>
+      <p>Recognizing this problem the W3C and <a href="http://www.idpf.org">IDPF</a>
+        have organized a series of Workshops in 2013 (in <a href="http://www.w3.org/2012/08/electronic-books/">New
+          York</a>, <a href="https://www.w3.org/2013/06/ebooks/">Tokyo</a>, and
+        in <a href="http://www.w3.org/2012/12/global-publisher/">Paris</a>) to
+        address this issue. This led to the establishment, in May 2013, of the <a
+          href="http://www.w3.org/dpub/">Digital Publishing Activity</a> and, in
+        June 2013, the <a href="http://www.w3.org/dpub/IG/wiki/Main_Page">Digital
+          Publishing Interest Group</a> was formally chartered. The <a href="http://www.w3.org/2013/02/digpubig.html">mission</a>
+        of the Group states:</p>
+      <blockquote>The mission of the Digital Publishing Interest Group (DPUB IG)
+        […] a forum for experts in the digital publishing ecosystem […] for
+        technical discussions, gathering use cases and requirements to align the
+        existing formats and technologies (e.g., for electronic books) with
+        those used by [W3C’s] Open Web Platform.</blockquote>
+      <p>What does this mean in practice? The DPUB IG brings publishing experts
+        together to identify issues that are not, or not adequately, addressed
+        by the current generation of W3C technologies. These issues and
+        requirements are&nbsp; documented and contacts are established with
+        relevant Working Groups at the W3C who update or develop specifications
+        based on these information. The Interest Group gathers experts from
+        various companies and institutions, including professional publishers,
+        like Wiley, Hachette, or Pearson, industry groups or non-profit
+        institutions like the BISG, IDPF, or the Daisy Consortium, technology
+        companies, like IBM, Google, Rakuten, Antenna House, or Apple, and
+        academic institutions, like the University of Illinois or Ghent
+        University. </p>
     </section>
-    
     <section>
-      <h2>Task Forces and Highlights</h2>
-      <p>The DPUB IG has several task forces dedicated to specific issues. Some task forces, like Web Annotations, become their own <a href="http://www.w3.org/annotation/">Working Groups</a>.</p> 
-      <p>The Pagination and Layout task force works closely with the CSS WG. The group has published <a href = "http://www.w3.org/TR/dpub-latinreq/">Requirements for Latin Text Layout and Pagination</a> and <a href = "http://www.w3.org/TR/2014/WD-css-inline-3-20141218/">CSS Inline Layout Module Level 3</a>, a working draft that enables drop caps and stick-up caps in CSS. There is significant work being done toward standardizing pagination control.</p>
-      <p>The Metadata task force has published a note based on industry interviews in which the team discovered that OWP offers the tools that publishing requires, however publishers may not be familar with the tools.</p>
-      <p>The Content and Markup task force is working on a method to provide a standard way to add a logical structure on top of (but staying compatible with) HTML. This group is working with the W3C's Protocols and Formats WG, which overses extensions through standard attributes for accessibility using ARIA.</p>
-      <p>The Accessibility task force is reviewing existing W3C documentaton to assess whether the documents reflect the needs of digital publishing and whether publishers are using the documents.</p>
-      <p>The STEM (Science, Technology, Engineering, Medicine) task force conducted initial interviews with industry experts and will send out a survey by the end of the month to refine the information gathered in the survey. STEM is a broad category, and we are looking to understand which areas are unique to STEM publihsing.</p>
+      <h3>Task Forces and Highlights</h3>
+      <p>Obviously, the job of the DPUB IG is huge and complex; to manage those
+        a set of Task Forces has been created. The choice of the task forces
+        reflect the participants’ interest, and the approach they have taken in
+        doing their work are different from one task force to the other. The
+        current task forces are as follows.</p>
+      <ul>
+        <li>The <span style="font-style: italic; font-weight: bold;">Pagination
+            and Layout Task Force</span> looks at the requirements publishers
+          have on styling and pagination, beyond what the current Web
+          technologies already provide,. These include hyphenation, drop caps,
+          running headers and footers, or pagination control. The Task Force has
+          published a document entitled “<a href="http://www.w3.org/TR/dpub-latinreq/">Requirements
+            for Latin Text Layout and Pagination”</a> (the document is still a
+          draft and new releases are to be expected) and members of the Task
+          Force are also active participants of the <a href="http://www.w3.org/Style/CSS">CSS
+            Working Group</a> at W3C. The Task Force has contributed to
+          the&nbsp; <a href="http://www.w3.org/TR/2014/WD-css-inline-3-20141218/">CSS
+            Inline Layout Module Level 3</a>, a Working Draft that enables drop
+          caps and stick-up caps in CSS. At the moment, one of the major focus
+          of the group is to work, together with the CSS Working Group, on
+          standardizing pagination information and control.</li>
+        <li>The <span style="font-style: italic; font-weight: bold;">Metadata
+            Task Force</span> has <a href="http://www.w3.org/TR/dpub-metadata/">published
+            a Note</a> based on industry interviews with representatives of
+          various sectors and roles within the publishing ecosystem. The
+          fundamental question was whether the technologies offered by the W3C
+          are appropriate to cover the Metadata needs of the Industry and what
+          W3C can contribute in that particular area: in fact, as established by
+          the report, W3C’s main areas of possible actions are in outreach,
+          technical discussions on how current technologies may and should be
+          used, rather than the development of new specifications.</li>
+        <li>The <span style="font-style: italic; font-weight: bold;">Content
+            and Markup Task Force</span> is working on an approach providing a
+          standard way to add logical structures and information on top of (but
+          staying compatible with) HTML. Example are the identification of
+          glossaries, footnotes, (mathematical) proofs, or explanations. The
+          Task Force is working with W3C’s <a href="http://www.w3.org/WAI/PF/">Protocols
+            and Formats Working Group</a>, which oversees extensions of HTML
+          through standard attributes using a technology called <a href="http://www.w3.org/TR/wai-aria/">ARIA</a>;
+          these attributes, and the extensions thereof, may be used to describe
+          the content of an HTML file. An interesting aspect of the work is that
+          ARIA had been originally developed for Web Accessibility; by binding
+          the structural markup to ARIA an improved accessibility in eBooks is
+          also achieved.</li>
+        <li>The <span style="font-style: italic; font-weight: bold;">Accessibility
+            Task Force</span>
+          concentrates on accessibility guidelines. W3C has defined a number of
+          Accessibility Guidelines (for <a href="http://www.w3.org/TR/WCAG20/">Web
+            Content Authors</a>,&nbsp; <a href="http://www.w3.org/TR/ATAG20/">Authoring
+            Tools</a>, and <a href="http://www.w3.org/TR/UAAG20/">User Agents</a>)
+          but, as emphasized in the introduction, these guidelines were
+          typically developed without the participation of the Digital
+          Publishing Industry. This Task Force should fill the gap by reviewing
+          those guidelines and, possibly, suggest new features or alternative
+          formulations. Steps should also be taken so that the Publishing
+          Industry would actively use these documents in its own practice.</li>
+        <li>The <span style="font-style: italic; font-weight: bold;">STEM
+            (Science, Technology, Engineering, Medicine) Task Force</span>
+          conducted initial interviews with industry experts and will send out a
+          extensive survey by the end of the month to refine the information
+          gathered in the interviews. STEM is a broad category, and the Task
+          Force is looking to understand which areas are unique to STEM
+          publishing. An example for a specific issue possibly arising is
+          whether standard file formats for specific needs (e.g., for chemical
+          formula) should be standardized by W3C or not. </li>
+      </ul>
+      <p>One more Task Force is worth mentioning, although that Task Force is
+        not active in this Interest Group any more. This is the <span style="font-style: italic; font-weight: bold;">Annotation
+          Task Force</span>. This Task Force collected and published an
+        extensive <a href="http://www.w3.org/TR/dpub-annotation-uc/">set of use
+          cases and requirements</a> on Web annotations, a feature that is
+        considered to be critical for, e.g., educational publishing. This work
+        has now been spawned into a separate <a href="http://www.w3.org/annotation/">Annotation
+          Working Group</a>, whose charter is to define a standard model for
+        annotation exchange, access, and addressing. It is interesting to note
+        that the Annotation Working Group is the first W3C Group that is based
+        on the active cooperation of traditional Web Developers, Browser
+        developers, and representatives of the Publishing Industry.</p>
     </section>
-<section>
-  <h2>What's Next?</h2>
-  <p>In addition to these activities, the DPUB IG will work with IDPF to help move the vision of EPUB-WEB forward. Recently, W3C and IDPF released a joint white paper entitled <a href="http://w3c.github.io/epubweb/">"Advancing Portable Documents for the Open Web Platform: EPUB-WEB"</a>. This paper outlines a vision of portable documents as native citizens of the OWP. There will be no distinction between online ("Web") and portable ("EPUB"). This means that readers can access their content online and offline, enabling such miracles as annotations, stable references, rights management, reading on a subway, access to databases, and so on.</p>
-</section>
-
-</article>
-  </body></html>
+    <section>
+      <h2>What's Next?</h2>
+      <p>In addition to these activities, experts of W3C and of IDPF have also
+        published a white paper entitled <a href="http://w3c.github.io/epubweb/">"Advancing
+          Portable Documents for the Open Web Platform: EPUB-WEB"</a>. This
+        (unofficial) paper outlines a vision of portable documents as native
+        citizens of the Web. Quoting from the white paper:</p>
+      <blockquote>Our vision for EPUB-WEB is that portable documents become
+        fully native citizens of the Open Web Platform. In this vision, the
+        current format- and workflow-level separation between offline/portable
+        (EPUB) and online (Web) document publishing is diminished to zero. These
+        are merely two dynamic manifestations of the same publication: content
+        authored with online use as the primary mode can easily be saved by the
+        user for offline reading in portable document form. Content authored
+        primarily for use as a portable document can be put online, without any
+        need for refactoring the content. Publishers can choose to utilize
+        either or both of these publishing modes, and users can choose either or
+        both of these consumption modes. Essential features flow seamlessly
+        between online and offline modes; examples include cross-references,
+        user annotations, access to online databases, as well as licensing and
+        rights management.</blockquote>
+      <p>EPUB-WEB may have a profound influence in a number of areas of
+        publishing, including educational or scholarly publishing, electronic
+        books, in-house documentation systems, and of course the way users would
+        manage documents on the Web. The months to come will concentrate on
+        whether and how this overall vision can be put in practice, and whether
+        this vision should result in working on a next generation of EPUB format
+        that may finally reconcile the worlds of the Web and Publishing. At the
+        moment, the focus is on gathering comments, identify further technical
+        challenges as well issues touching on feasibility. If both the W3C and
+        IDPF decide to go ahead, this may result in a major activity in around a
+        year from now. (By the way, the authors welcome issues and comments from
+        anyone, using the github <a href="https://github.com/w3c/epubweb/issues">issue
+          system</a>). The role of the current Digital Publishing Interest Group
+        may prove to be crucial in this process by participating in the
+        discussion leading up to a possible specification work.</p>
+    </section>
+  </body>
+</html>
